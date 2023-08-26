@@ -1,0 +1,87 @@
+body {
+    background: rgb(221, 221, 221);
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    margin-top: 100px;
+}
+
+.cell-container {
+
+    display: grid;
+    width: 960px;
+    grid-auto-rows: 1fr;
+    background: white;
+    gap: 0.2%;
+
+    margin: 50px auto 50px auto ;
+    aspect-ratio: 1/1;
+
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+
+}
+
+.cell {
+    background: rgb(167, 137, 137);
+
+    border: 1px solid;
+
+}
+
+
+.slidercontainer {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 40px; height: 40px;
+    background: rgb(112, 114, 224);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.output {
+    font-size: large;
+    margin-top: 10px;
+
+}
+
+
+.settings {
+    display: block;
+    text-align: center;
+    margin: auto;
+
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
+
+.clickable.clicked {
+outline: 1px #5b59ee solid;
+}
